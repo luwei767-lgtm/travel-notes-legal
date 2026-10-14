@@ -19,7 +19,7 @@ footer{color:var(--muted);font-size:13px;padding-top:16px;padding-bottom:32px}fo
 <header><a class="brand" href="support">旅行手記</a><nav aria-label="Language"><a href="../en/privacy" hreflang="en">English</a><a href="../zh-hans/privacy" hreflang="zh-Hans">简体中文</a><span>繁體中文</span></nav></header>
 <main>
 <h1>隱私政策</h1>
-<p class="meta">適用於：旅行手記（Travel Notes）iPhone 與安卓 App　生效日期：2026 年 10 月 11 日</p>
+<p class="meta">適用於：旅行手記（Travel Notes）iPhone 與安卓 App　生效日期：2026 年 10 月 14 日</p>
 
 <p>旅行手記由個人開發者陸唯（Lu Wei，以下稱“我們”）開發和運營。我們的原則是：<strong>你的旅行資料只儲存在你自己的手機上</strong>。App 不需要註冊帳號，沒有廣告，不使用第三方統計或追蹤工具，不出售也不共享你的個人資訊用於廣告。</p>
 <p>本政策說明 App 會處理哪些資料、為什麼處理、交給誰，以及你可以怎樣管理。App 內“我的 → 設定 → 隱私說明”是本政策的簡要版。</p>
@@ -45,6 +45,9 @@ footer{color:var(--muted);font-size:13px;padding-top:16px;padding-bottom:32px}fo
 <h3>會員核驗與次數</h3>
 <p>為確認你是會員並限制每日使用次數，伺服器會用你的會員匿名編號（見第 3 節，不含姓名、郵箱等）向 RevenueCat 查詢會員狀態，並儲存當天的使用次數。次數記錄只儲存編號的雜湊值，每天清零。為防止濫用，伺服器會在記憶體中臨時處理網路來源地址，約一分鐘後丟棄，不寫入日誌。</p>
 
+<h3>地點位置與路程（僅 iPhone，經蘋果地圖）</h3>
+<p>在 iPhone 上，新增地點時輸入的名稱，以及開啟當天頁時還沒有位置的地點名稱，會連同所在城市的大致範圍交給蘋果地圖（Apple MapKit）查詢準確位置；相鄰地點的座標會交給蘋果地圖估算步行、公交和打車時間，用於顯示路程、給出順路調整建議和按座標導航。這些查詢由蘋果的系統服務直接處理，不經過我們的伺服器、不交給 AI，不包含你的定位、照片、帳單或其他旅行；找到的位置和路程只儲存在你的手機上。蘋果對查詢的處理遵循其隱私政策。安卓版暫不使用。</p>
+
 <h2>3. 會員訂閱與付款</h2>
 <ul>
 <li>付款由 Apple（App Store）或 Google（Google Play）處理。我們收不到你的銀行卡、Apple ID 或 Google 帳戶資訊。</li>
@@ -57,7 +60,7 @@ footer{color:var(--muted);font-size:13px;padding-top:16px;padding-bottom:32px}fo
 <li><strong>當前位置</strong>：只有你主動使用“當前位置”時才請求定位，取得一次位置後就停止。拒絕後仍可手動填寫。</li>
 <li><strong>旅行路線</strong>：預設關閉。你為某趟旅行開啟後，旅行期間會在後臺使用精確定位，大約每兩分鐘或移動數百米記錄一個點（安卓會顯示常駐通知）。路線只儲存在手機上，不上傳、不發給 AI，可隨時暫停、關閉或刪除，旅行結束後自動停止。只有你主動匯出 GPX、攻略圖片或備份時，路線才會寫入你選擇的檔案。</li>
 <li><strong>照片</strong>：只處理你選中的照片，儲存在手機上。</li>
-<li><strong>導航</strong>：把地點名稱交給你選擇的地圖 App，之後的定位和導航遵循該地圖 App 的規則。</li>
+<li><strong>導航</strong>：把地點名稱（iPhone 上已有位置的地點還包括座標）交給你選擇的地圖 App，之後的定位和導航遵循該地圖 App 的規則。</li>
 <li><strong>剪貼簿</strong>：只在你主動複製時寫入，不會主動讀取。</li>
 </ul>
 <p>以上許可權都可以在手機系統設定裡隨時關閉。</p>
@@ -69,6 +72,7 @@ footer{color:var(--muted);font-size:13px;padding-top:16px;padding-bottom:32px}fo
 <tr><td>DeepSeek</td><td>你主動使用的 AI 整理</td><td>中國</td></tr>
 <tr><td>RevenueCat</td><td>會員訂閱狀態管理</td><td>美國</td></tr>
 <tr><td>Apple / Google</td><td>應用下載與訂閱付款</td><td>按其各自政策</td></tr>
+<tr><td>Apple（蘋果地圖）</td><td>iPhone 上的地點查詢與路程估算（只發送地點名稱、城市大致範圍和地點座標）</td><td>按蘋果政策</td></tr>
 <tr><td>挪威氣象局 MET Norway</td><td>天氣預報（伺服器按城市查詢，不涉及你的個人資訊）</td><td>挪威</td></tr>
 </table>
 <p>使用 AI 等聯網功能時，資料會被傳送到你所在國家或地區以外的地方處理。我們只發送完成該功能所需的最少內容，並且只在你主動使用時傳送。除上表外，我們不會把你的資料提供給他人，除非法律要求。</p>

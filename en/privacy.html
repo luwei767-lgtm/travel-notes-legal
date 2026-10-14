@@ -19,7 +19,7 @@ footer{color:var(--muted);font-size:13px;padding-top:16px;padding-bottom:32px}fo
 <header><a class="brand" href="support">Travel Notes</a><nav aria-label="Language"><span>English</span><a href="../zh-hans/privacy" hreflang="zh-Hans">简体中文</a><a href="../zh-hant/privacy" hreflang="zh-Hant">繁體中文</a></nav></header>
 <main>
 <h1>Privacy Policy</h1>
-<p class="meta">Applies to: Travel Notes for iPhone and Android　Effective date: October 11, 2026</p>
+<p class="meta">Applies to: Travel Notes for iPhone and Android　Effective date: October 14, 2026</p>
 
 <p>Travel Notes is developed and operated by Lu Wei, an independent developer ("we", "us"). Our principle is simple: <strong>your travel data stays on your own phone</strong>. The app needs no account, shows no ads, uses no third-party analytics or tracking tools, and never sells or shares your personal information for advertising.</p>
 <p>This policy explains what the app handles, why, who receives it, and how you stay in control. A short version is available in the app under Me → Settings → Privacy Notice.</p>
@@ -45,6 +45,9 @@ footer{color:var(--muted);font-size:13px;padding-top:16px;padding-bottom:32px}fo
 <h3>Membership check and daily limit</h3>
 <p>To confirm your membership and limit daily usage, the server asks RevenueCat about your membership status using your anonymous member ID (see section 3; it contains no name or email) and stores today's usage count. The count is stored only against a hash of that ID and resets every day. To prevent abuse, the server briefly holds network addresses in memory and discards them after about a minute; they are not logged.</p>
 
+<h3>Place locations and travel times (iPhone only, via Apple Maps)</h3>
+<p>On iPhone, the place names you type when adding a place, and the names of places without a location when you open a day, are sent with the rough area of that city to Apple Maps (Apple MapKit) to find their exact location. Coordinates of neighbouring places are sent to Apple Maps to estimate walking, transit and taxi times, used to show travel times, suggest a shorter order and navigate by coordinates. These lookups are handled directly by Apple's system service, do not pass through our server, are not sent to AI and do not include your location, photos, bills or other trips; the locations and travel times found are kept only on your phone. Apple handles these lookups under its own privacy policy. Not used on Android yet.</p>
+
 <h2>3. Membership and payments</h2>
 <ul>
 <li>Payments are handled by Apple (App Store) or Google (Google Play). We never receive your card details, Apple ID or Google account information.</li>
@@ -57,7 +60,7 @@ footer{color:var(--muted);font-size:13px;padding-top:16px;padding-bottom:32px}fo
 <li><strong>Current location</strong>: requested only when you choose "current location", and stopped as soon as one position is obtained. You can always type a place instead.</li>
 <li><strong>Travel route</strong>: off by default. When you turn it on for a trip, the app uses precise location in the background during that trip, recording a point roughly every two minutes or few hundred meters (Android shows an ongoing notification). The route stays on your phone, is never uploaded or sent to AI, can be paused, turned off or deleted at any time, and stops automatically when the trip ends. It is written to a file only when you export a GPX, guide image or backup.</li>
 <li><strong>Photos</strong>: only the photos you pick are used, and they stay on your phone.</li>
-<li><strong>Navigation</strong>: the place name is handed to the map app you choose; that app's own rules apply from there.</li>
+<li><strong>Navigation</strong>: the place name (and, on iPhone, its coordinates once located) is handed to the map app you choose; that app's own rules apply from there.</li>
 <li><strong>Clipboard</strong>: written only when you copy something; never read automatically.</li>
 </ul>
 <p>You can turn off any of these permissions in your phone's settings at any time.</p>
@@ -69,6 +72,7 @@ footer{color:var(--muted);font-size:13px;padding-top:16px;padding-bottom:32px}fo
 <tr><td>DeepSeek</td><td>AI assistance you choose to use</td><td>China</td></tr>
 <tr><td>RevenueCat</td><td>Subscription status</td><td>USA</td></tr>
 <tr><td>Apple / Google</td><td>App download and subscription payments</td><td>Per their own policies</td></tr>
+<tr><td>Apple (Apple Maps)</td><td>Place search and travel-time estimates on iPhone (only place names, rough city area and place coordinates)</td><td>Per Apple's policy</td></tr>
 <tr><td>MET Norway</td><td>Weather forecasts (queried by city; no personal data)</td><td>Norway</td></tr>
 </table>
 <p>When you use AI and other online features, data is processed outside your country or region. We send only the minimum needed for that feature, and only when you use it. Apart from the recipients above, we do not share your data unless required by law.</p>
